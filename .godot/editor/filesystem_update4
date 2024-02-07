@@ -1,2 +1,7 @@
 res://Scenes/player.tscn
 res://player.gd
+res://mob.gd
+res://Scenes/mob.tscn
+res://Scenes/main.tscn
+res://main.gd
+res://Scripts/mob.gd
