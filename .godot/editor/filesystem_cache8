@@ -1,8 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707346648
+::res://::1707421222
 icon.svg::CompressedTexture2D::8624908662554811327::1707256413::1707256419::1::::<><>::
-mob.gd::GDScript::-1::1707346628::0::1::::<>RigidBody2D<>::
-player.gd::GDScript::-1::1707345974::0::1::::<>Area2D<>::
+main.gd::GDScript::-1::1707420474::0::1::::<>Node<>::
 ::res://art/::1707334740
 enemyFlyingAlt_1.png::CompressedTexture2D::6496288593212580809::1707256189::1707256479::1::::<><>::
 enemyFlyingAlt_2.png::CompressedTexture2D::3029791502315081350::1707256189::1707256479::1::::<><>::
@@ -18,7 +17,12 @@ playerGrey_walk1.png::CompressedTexture2D::7928624921136526922::1707256189::1707
 playerGrey_walk2.png::CompressedTexture2D::2356027100704420276::1707256189::1707256479::1::::<><>::
 ::res://fonts/::1707334740
 Pixeled.ttf::FontFile::2788405408836225696::1707256189::1707256479::1::::<><>::
-::res://Scenes/::1707346634
-mob.tscn::PackedScene::5090143281313547008::1707346651::0::1::::<><>::res://mob.gd<>uid://cys36ofkuagwf::::res://art/enemyFlyingAlt_1.png<>uid://bjfwhuh6qrkm5::::res://art/enemyFlyingAlt_2.png<>uid://bwrvnh8j03n57::::res://art/enemyWalking_1.png<>uid://cdbivy8seo4dg::::res://art/enemyWalking_2.png<>uid://ctxgwlvwp8d65::::res://art/enemySwimming_1.png<>uid://ck0ug3u3ekifh::::res://art/enemySwimming_2.png
-player.tscn::PackedScene::1336773544038247403::1707346651::0::1::::<><>::res://player.gd<>uid://kx8eqrgvi4bu::::res://art/playerGrey_up1.png<>uid://clqn1g4xeao15::::res://art/playerGrey_up2.png<>uid://dk7xj866afyis::::res://art/playerGrey_walk1.png<>uid://8tjol8l3beym::::res://art/playerGrey_walk2.png
-::res://Scripts/::1707346648
+::res://Scenes/::1707421173
+hud.tscn::PackedScene::6203393761075986013::1707421173::0::1::::<><>::uid://bfyyvn6ovmjj1::::res://fonts/Pixeled.ttf
+main.tscn::PackedScene::3244283951397587103::1707421224::0::1::::<><>::res://main.gd<>uid://tbsp2q82k5gh::::res://Scenes/player.tscn<>uid://cerx6fc56rbu3::::res://Scenes/mob.tscn
+mob.tscn::PackedScene::5090143281313547008::1707347959::0::1::::<><>::res://Scripts/mob.gd<>uid://cys36ofkuagwf::::res://art/enemyFlyingAlt_1.png<>uid://bjfwhuh6qrkm5::::res://art/enemyFlyingAlt_2.png<>uid://bwrvnh8j03n57::::res://art/enemyWalking_1.png<>uid://cdbivy8seo4dg::::res://art/enemyWalking_2.png<>uid://ctxgwlvwp8d65::::res://art/enemySwimming_1.png<>uid://ck0ug3u3ekifh::::res://art/enemySwimming_2.png
+player.tscn::PackedScene::1336773544038247403::1707420474::0::1::::<><>::res://Scripts/player.gd<>uid://kx8eqrgvi4bu::::res://art/playerGrey_up1.png<>uid://clqn1g4xeao15::::res://art/playerGrey_up2.png<>uid://dk7xj866afyis::::res://art/playerGrey_walk1.png<>uid://8tjol8l3beym::::res://art/playerGrey_walk2.png
+::res://Scripts/::1707421222
+hud.gd::GDScript::-1::1707421220::0::1::::<>CanvasLayer<>::
+mob.gd::GDScript::-1::1707347958::0::1::::<>RigidBody2D<>::
+player.gd::GDScript::-1::1707345974::0::1::::<>Area2D<>::

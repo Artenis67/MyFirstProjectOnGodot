@@ -1,7 +1,7 @@
 res://Scenes/player.tscn
-res://player.gd
-res://mob.gd
-res://Scenes/mob.tscn
-res://Scenes/main.tscn
 res://main.gd
-res://Scripts/mob.gd
+res://Scenes/hud.tscn
+res://Scenes/main.tscn
+res://Scripts/hud.gd
+res://Scripts/main.gd
+res://Scenes/mob.tscn
