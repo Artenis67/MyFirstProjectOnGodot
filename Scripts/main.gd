@@ -3,17 +3,15 @@ extends Node
 @export var mob_scene: PackedScene
 var score
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
-	# new_game()
-
 func game_over():
+	$Music.stop()
+	$GameOverSound.play()
 	$ScoreTimer.stop()
 	$MobTimer.stop()
 	$HUD.show_game_over()
 
 func new_game():
+	$Music.play()
 	score = 0
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
