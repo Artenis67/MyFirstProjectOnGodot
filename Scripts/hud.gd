@@ -11,7 +11,7 @@ func show_game_over():
 	show_message("GAME OVER")
 	await $MessageTimer.timeout
 	
-	$Message.text = "EVITEZ LES ENNEMIES!"
+	$Message.text = "EVITEZ LES ENNEMIS!"
 	$Message.show()
 	
 	await get_tree().create_timer(1.0).timeout

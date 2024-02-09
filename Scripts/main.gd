@@ -18,7 +18,7 @@ func new_game():
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
 	$HUD.update_score(score)
-	$HUD.show_message("C'EST PARTIE !")
+	$HUD.show_message("C'EST PARTI !")
 
 func _on_start_timer_timeout():
 	$ScoreTimer.start()
