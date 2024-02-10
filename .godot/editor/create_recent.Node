@@ -1,4 +1,5 @@
 Timer
+<<<<<<< HEAD
 Sprite2D
 CollisionShape2D
 AnimatedSprite2D
@@ -6,9 +7,20 @@ Area2D
 ColorRect
 AudioStreamPlayer
 AudioStreamPlayer2D
+=======
+>>>>>>> parent of 13e3b6e (Fin de dev de la base du jeu)
 Button
 Label
 CanvasLayer
 PathFollow2D
 Path2D
 Marker2D
+<<<<<<< HEAD
+=======
+Node
+VisibleOnScreenNotifier2D
+CollisionShape2D
+AnimatedSprite2D
+RigidBody2D
+Area2D
+>>>>>>> parent of 13e3b6e (Fin de dev de la base du jeu)
