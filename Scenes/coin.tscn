@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://bl2j4d1i0x8nf"]
+
+[ext_resource type="Script" path="res://Scripts/coin.gd" id="1_g00ti"]
+[ext_resource type="PackedScene" uid="uid://bmhs5anaahc2j" path="res://Scenes/main.tscn" id="2_8mqow"]
+[ext_resource type="Texture2D" uid="uid://dtw723pja6wpi" path="res://Import/sprites/image-removebg-preview.png" id="2_s5mqo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5h582"]
+size = Vector2(52, 56)
+
+[node name="coin" type="Area2D"]
+script = ExtResource("1_g00ti")
+main_scene = ExtResource("2_8mqow")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_s5mqo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5h582")
