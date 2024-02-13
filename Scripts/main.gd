@@ -1,30 +1,26 @@
 extends Node
 
 @export var mob_scene: PackedScene
-@export var coin_scene: PackedScene
 var score
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
-	# new_game()
-
 func game_over():
+	$Music.stop()
+	$GameOverSound.play()
 	$ScoreTimer.stop()
 	$MobTimer.stop()
 	$HUD.show_game_over()
 
 func new_game():
+	$Music.play()
 	score = 0
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
 	$HUD.update_score(score)
-	$HUD.show_message("C'EST PARTIE !")
+	$HUD.show_message("C'EST PARTI !")
 
 func _on_start_timer_timeout():
 	$ScoreTimer.start()
 	$MobTimer.start()
-	$CoinsTimer.start()
 
 func _on_score_timer_timeout():
 	score += 1
@@ -44,16 +40,4 @@ func _on_mob_timer_timeout():
 	mob.linear_velocity = velocity.rotated(direction)
 	
 	add_child(mob)
-
-func _on_coins_timer_timeout():
-	var new_coin_position_x = randf_range(80, 400)
-	var new_coin_position_y = randf_range(80, 680)
-	
-	var new_coin = coin_scene.instantiate()
-	
-	new_coin.position = Vector2(new_coin_position_x, new_coin_position_y)
-	
-	add_child(new_coin)
-	
-	print("Coin timer timeout")
 
