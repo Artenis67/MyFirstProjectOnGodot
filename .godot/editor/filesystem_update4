@@ -1,7 +1,12 @@
 res://Scenes/coin.tscn
 res://Scripts/coin.gd
 res://Scenes/player.tscn
-res://Scenes/mob.tscn
-res://Scenes/main.tscn
+res://main.gd
 res://Scenes/hud.tscn
+<<<<<<< HEAD
+=======
+res://Scenes/main.tscn
+res://Scripts/hud.gd
+>>>>>>> parent of 7ebdbd4 (Correction de fautes d'orthographe)
 res://Scripts/main.gd
+res://Scenes/mob.tscn
